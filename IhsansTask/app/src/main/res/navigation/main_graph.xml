@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/dateFragment">
+
+    <fragment
+        android:id="@+id/dateFragment"
+        android:name="com.example.ihsanstask.ui.date.DateFragment"
+        android:label="DateFragment"
+        tools:layout="@layout/fragment_date">
+
+        <action
+            android:id="@+id/action_dateFragment_to_addEventFragment"
+            app:destination="@id/addEventFragment" />
+
+        <action
+            android:id="@+id/action_dateFragment_to_eventsFragment"
+            app:destination="@id/eventsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/addEventFragment"
+        android:name="com.example.ihsanstask.ui.addEvent.AddEventFragment"
+        android:label="AddEventFragment"
+        tools:layout="@layout/fragment_add_event">
+
+        <argument
+            android:name="date"
+            app:argType="string" />
+
+        <argument
+            android:name="hijriDate"
+            app:argType="string" />
+
+        <argument
+            android:name="id"
+            android:defaultValue="-1"
+            app:argType="integer" />
+    </dialog>
+
+    <fragment
+        android:id="@+id/eventsFragment"
+        android:name="com.example.ihsanstask.ui.events.EventsFragment"
+        android:label="EventsFragment"
+        tools:layout="@layout/fragment_events">
+
+        <action
+            android:id="@+id/action_eventsFragment_to_addEventFragment"
+            app:destination="@id/addEventFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+</navigation>

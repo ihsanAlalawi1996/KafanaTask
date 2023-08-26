@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="select">إختار</string>
+    <string name="pick_date">إختر تاريح</string>
+    <string name="date">تاريح</string>
+    <string name="hijri_date">التاريخ الهجري</string>
+    <string name="event_name">اسم الحدث</string>
+    <string name="save">حفظ</string>
+    <string name="this_field_required">هذه الحقل مطلوبه</string>
+    <string name="assign_event">تعيين حدث</string>
+    <string name="show_events">عرض الأحداث</string>
+    <string name="there_are_no_events_yet">لا يوجد أحداث حتى الان</string>
+    <string name="back">رجوع</string>
+    <string name="delete">حذف</string>
+</resources>

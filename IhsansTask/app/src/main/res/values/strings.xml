@@ -1,0 +1,14 @@
+<resources>
+    <string name="select">Select</string>
+    <string name="pick_date">Pick date</string>
+    <string name="date">Date</string>
+    <string name="hijri_date">Hijri Date</string>
+    <string name="event_name">Event Name</string>
+    <string name="save">Save</string>
+    <string name="this_field_required">This field is required</string>
+    <string name="assign_event">Assign event</string>
+    <string name="show_events">Show events</string>
+    <string name="there_are_no_events_yet">There are no events yet</string>
+    <string name="back">Back</string>
+    <string name="delete">Delete</string>
+</resources>
